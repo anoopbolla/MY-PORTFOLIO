@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(b1.jpg); /* Path to your image */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Ensure the background stays fixed when scrolling */
+}
+
+header {
+    background: rgba(20, 20, 20, 0); /* Semi-transparent background for readability */
+    color: #f0eeee;
+    padding: 1rem 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+header .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .profile-pic {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 20px; /* Space between the image and the text */
+    
+}
+
+header .main-heading {
+    font-size: 2rem; /* Adjust the font size to be slightly smaller */
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem 0;
+}
+header a{
+    color: whitesmoke;
+}
+header a:hover{
+    color: blue;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* About Section Styles */
+#about {
+    background: rgba(17, 16, 16, 0.43); /* Semi-transparent background for readability */
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(232, 228, 228, 0.966);
+}
+
+#about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #f5f3f3;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold; /* Text is bold */
+}
+
+/* Projects Section Styles */
+#projects {
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.329); /* Semi-transparent background for readability */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#projects h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #edebeb;
+}
+
+.project {
+    background: #1d1c1c54;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(232, 228, 228, 0.966);
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #f1f0f0;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #eeecec;
+    margin-bottom: 0.5rem;
+}
+
+.project-title {
+    font-weight: bold; /* Make project title bold */
+    color: #ecebeb;
+    text-align: right; /* Align text to the right */
+}
+
+.project-details {
+    font-weight: bold; /* Make project details bold */
+    color: #eeeeee;
+    text-align: right; /* Align text to the right */
+}
+/* Achievements Section Styles */
+#achievements {
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.447); /* Semi-transparent background for readability */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative; /* For positioning the buttons */
+    color: #ecebeb;
+    box-shadow: 0 0 10px rgba(239, 237, 237, 0.978);
+}
+
+#achievements h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+#achievements h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; 
+    color: #faf9f9;
+}
+
+.achievement-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.achievement {
+    min-width: 100%;
+    box-sizing: border-box;
+    position:static;
+    padding-left: 10px;
+    background: #00000015;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.989);
+    margin: 0 1rem;
+}
+
+.controller {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00000000;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev-btn {
+    left: -5px; /* Adjust as needed */
+}
+
+#next-btn {
+    right: -5px; /* Adjust as needed */
+}
+
+
+/* Skills Section Styles */
+#skills {
+    padding: 2rem 1rem;
+    background: rgba(10, 10, 10, 0.327); /* Semi-transparent background for readability */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#skills h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #f6f6f6;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.skills-list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #f7f5f5;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-weight: bold; /* Make skills bold */
+}
+
+.skills-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #fbf9f9;
+    font-weight: bold;
+}
+/* Education Section Styles */
+#education {
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background for readability */
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#education h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fffefe;
+}
+
+.education-item {
+    background: #06060659;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(241, 241, 241, 0.967);
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.education-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fdfdfd;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Contact Section Styles */
+#contact {
+    background: rgba(16, 15, 15, 0.386); /* Semi-transparent background for readability */
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 2rem auto; /* Add margin to create a gap */
+    border-radius: 5px;
+    border-top: 1px solid #ddd; /* Add top border */
+}
+
+#contact h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; /* Increase the font size */
+    font-weight: bold; /* Make the heading bold */
+    color: #ecebeb;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #0b0b0b5a;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(239, 237, 237, 0.93);
+}
+
+.contact-details p {
+    margin: 0.5rem 0;
+    color: #ecebeb;
+}
+
+.contact-details strong {
+    font-weight: bold; /* Make strong tags bold */
+    color: #ecebeb;
+}
+
+.contact-details a {
+    color: #edebeb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #007BFF;
+}
+
+
+
+
+/* Footer Styles */
+footer {
+    background: rgba(16, 16, 16, 0.274); /* Semi-transparent background for readability */
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0; /* Reduced padding */
+    position: relative; /* Ensure it stays at the bottom of the content */
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
